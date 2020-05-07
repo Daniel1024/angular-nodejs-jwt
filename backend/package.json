@@ -1,0 +1,29 @@
+{
+  "name": "angular-nodejs-jwt",
+  "version": "1.0.0",
+  "description": "Este es un ejemplo practico del Stack MEAN (Mongodb, Express, Angular, Nodejs), en el que crearemos una aplicación simple con autenticación. Para esto usaremos conceptos como JsonWebToken, middlewares y Guards.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel1024/angular-nodejs-jwt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel1024/angular-nodejs-jwt/issues"
+  },
+  "homepage": "https://github.com/Daniel1024/angular-nodejs-jwt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
