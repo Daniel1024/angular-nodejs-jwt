@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 // Components
 import {TasksComponent} from './components/tasks/tasks.component';
 import {PrivateTasksComponent} from './components/private-tasks/private-tasks.component';
-import {SignupComponent} from './components/signup/signup.component';
 import {SigninComponent} from './components/signin/signin.component';
+import {SignupComponent} from './components/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -21,11 +21,11 @@ const routes: Routes = [
     component: PrivateTasksComponent
   },
   {
-    path: 'singup',
+    path: 'signup',
     component: SignupComponent
   },
   {
-    path: 'singin',
+    path: 'signin',
     component: SigninComponent
   }
 ];
