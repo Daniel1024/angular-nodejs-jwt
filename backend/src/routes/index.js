@@ -28,12 +28,35 @@ router.post('/signin', async (req, res) => {
     res.status(200).json({token});
 });
 
+let tasks = [
+    {
+        _id: 1,
+        name: 'task one',
+        description: 'descripción de task one'
+    },
+    {
+        _id: 2,
+        name: 'task two',
+        description: 'descripción de task two'
+    },
+    {
+        _id: 3,
+        name: 'task three',
+        description: 'descripción de task three'
+    },
+    {
+        _id: 4,
+        name: 'task four',
+        description: 'descripción de task four'
+    }
+]
+
 router.get('/tasks', async (req, res) => {
-    res.json([]);
+    res.json(tasks);
 });
 
 router.get('/private-tasks', verifyToken, async (req, res) => {
-    res.json([]);
+    res.json(tasks);
 });
 
 router.get('/profile', verifyToken, async (req, res) => {
